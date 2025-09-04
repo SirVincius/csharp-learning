@@ -1,0 +1,14 @@
+/home/vincent/csharp-learning/csharp-learning/bin/Debug/net8.0/csharp-learning
+/home/vincent/csharp-learning/csharp-learning/bin/Debug/net8.0/csharp-learning.deps.json
+/home/vincent/csharp-learning/csharp-learning/bin/Debug/net8.0/csharp-learning.runtimeconfig.json
+/home/vincent/csharp-learning/csharp-learning/bin/Debug/net8.0/csharp-learning.dll
+/home/vincent/csharp-learning/csharp-learning/bin/Debug/net8.0/csharp-learning.pdb
+/home/vincent/csharp-learning/csharp-learning/obj/Debug/net8.0/csharp-learning.GeneratedMSBuildEditorConfig.editorconfig
+/home/vincent/csharp-learning/csharp-learning/obj/Debug/net8.0/csharp-learning.AssemblyInfoInputs.cache
+/home/vincent/csharp-learning/csharp-learning/obj/Debug/net8.0/csharp-learning.AssemblyInfo.cs
+/home/vincent/csharp-learning/csharp-learning/obj/Debug/net8.0/csharp-learning.csproj.CoreCompileInputs.cache
+/home/vincent/csharp-learning/csharp-learning/obj/Debug/net8.0/csharp-learning.dll
+/home/vincent/csharp-learning/csharp-learning/obj/Debug/net8.0/refint/csharp-learning.dll
+/home/vincent/csharp-learning/csharp-learning/obj/Debug/net8.0/csharp-learning.pdb
+/home/vincent/csharp-learning/csharp-learning/obj/Debug/net8.0/csharp-learning.genruntimeconfig.cache
+/home/vincent/csharp-learning/csharp-learning/obj/Debug/net8.0/ref/csharp-learning.dll
