@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
 using System.Drawing;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices.Marshalling;
 
 public enum ConsoleColor
@@ -22,7 +23,26 @@ public enum ConsoleColor
     White       // 15
 }
 
-class Program {
+enum Slime
+{
+    BlueSlime = 10,
+    GreenSlime,
+    RedSlime
+}
+
+
+struct Point {
+    public int coordx;
+    public int coordy;
+
+    public void printX()
+    {
+        Console.WriteLine("x = {0}", coordx);
+    }
+}
+
+class Program
+{
 
     public static void printArray<T>(T[] array)
     {
@@ -33,6 +53,42 @@ class Program {
             else
                 Console.WriteLine("Item #{0} = {1}", i + 1, array[i].ToString());
         }
+    }
+
+    public static int addMultipleInt(params int[] multipleInts)
+    {
+        int sum = 0;
+        foreach (int i in multipleInts)
+        {
+            sum += i;
+        }
+        return sum;
+    }
+    //LOCAL FUNCTION TESTING
+    public static string localFunctionTest1()
+    {
+        string getName()
+        {
+            return "Brunelle";
+        }
+
+        return "Vincent " + getName();
+    }
+
+    public static void incrementInt(int value)
+    {
+        value++;
+    }
+
+    public static void AssignSomeValues(int x, string s, out int intValue, out string stringValue)
+    {
+        intValue = x;
+        stringValue = new string(s);
+    }
+
+    public static int substract(int value1, int value2)
+    {
+        return value1 - value2;
     }
     public static void Main()
     {
@@ -218,5 +274,35 @@ class Program {
         {
             Console.WriteLine(item);
         }
-    }   
+        //TESTING LOCAL FUNCTION
+        Console.WriteLine(localFunctionTest1());
+        int someValue1 = 1;
+        incrementInt(someValue1);
+        Console.WriteLine(someValue1);
+
+        int[] ints4 = { 1, 2, 3, 4, 5 };
+        Console.WriteLine(addMultipleInt(ints4));
+        Console.WriteLine(substract(5, 2));
+        Console.WriteLine(substract(value2: 5, value1: 2));
+
+        //ENUM
+        Slime redSlime = Slime.RedSlime;
+        Console.WriteLine(redSlime);
+        Console.WriteLine((int)redSlime);
+        Console.WriteLine((Slime)11);
+        Console.WriteLine("redSlime is a {0}", redSlime.ToString());
+        Array slimeValues = Enum.GetValues(typeof(Slime));
+        foreach (Slime s in slimeValues)
+        {
+            Console.WriteLine("Name = {0}", s);
+            Console.WriteLine("Value = {0}", (int)s);
+        }
+
+        //STRUCTURE
+        Point point1;
+        point1.coordx = 5;
+        point1.coordy = 10;
+        point1.printX();
+
+    }
 }

@@ -12,3 +12,4 @@
 /home/vincent/csharp-learning/csharp-learning/obj/Debug/net8.0/csharp-learning.pdb
 /home/vincent/csharp-learning/csharp-learning/obj/Debug/net8.0/csharp-learning.genruntimeconfig.cache
 /home/vincent/csharp-learning/csharp-learning/obj/Debug/net8.0/ref/csharp-learning.dll
+/home/vincent/csharp-learning/csharp-learning/obj/Debug/net8.0/csharp-learning.sourcelink.json
